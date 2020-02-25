@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>LifeCat HK Computer</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Packages / Pricing Tables -->
+  <div class="w3-container" id="packages" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-amber"><b>Build Your Own PC 砌機</b></h1>
+    <hr style="width:50px;border:5px solid #ffc107" class="w3-round">
+    <p></p>
+  </div>
+  
+  <div style="margin-left:10px;margin-right:10px;">
+
+            <div class="input-field col s6">
+          <input id="mb" type="text" class="validate">
+          <label for="mb">Motherboard</label>
+        </div>
+        
+            <div class="input-field col s6">
+          <input id="cpu" type="text" class="validate">
+          <label for="cpu">CPU</label>
+        </div>
+        
+            <div class="input-field col s6">
+          <input id="ram" type="text" class="validate">
+          <label for="ram">RAM</label>
+        </div>
+        
+            <div class="input-field col s6">
+          <input id="storage" type="text" class="validate">
+          <label for="storage">Storage</label>
+        </div>            
+        
+           <div class="input-field col s6">
+          <input id="psu" type="text" class="validate">
+          <label for="psu">Power Supply</label>
+        </div>
+        
+            <div class="input-field col s6">
+          <input id="case" type="text" class="validate">
+          <label for="case">Case</label>
+        </div>
+        
+            <div class="input-field col s6">
+          <input id="gpu" type="text" class="validate">
+          <label for="gpu">Graphics Card</label>
+        </div>
+        
+            <div class="input-field col s6">
+          <input id="card" type="text" class="validate">
+          <label for="card">Network/Sound Card</label>
+        </div>            
+            
+            <div class="input-field col s6">
+          <input id="mon" type="text" class="validate">
+          <label for="mon">Monitor</label>
+        </div>
+        
+            <div class="input-field col s6">
+          <input id="soft" type="text" class="validate">
+          <label for="soft">Software</label>
+        </div>
+        
+            <div class="input-field col s6">
+          <input id="access" type="text" class="validate">
+          <label for="access">Accessories</label>
+        </div>
+        
+                    <div class="input-field col s6">
+          <input id="sales" type="text" class="validate">
+          <label for="sales">Value Package/Sales</label>
+        </div>
+        
+            <div class="input-field col s6">
+          <input id="rnc" type="text" class="validate">
+          <label for="rnc">Refurbished & Clearance</label>
+        </div>
+        
+        <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-padding-16">Total : <div>$0</div></li>
+        <li class="w3-padding-16">Discount : <div>$0</div></li>
+        </ul>
+        <br>
+        
+          <button class="w3-button w3-amber w3-padding-large w3-hover-black">Add to Cart</button>
+          <button class="w3-button w3-amber w3-padding-large w3-hover-black">Sign Up</button>
+        
+</div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>

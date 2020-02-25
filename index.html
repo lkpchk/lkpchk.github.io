@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>LK Computer</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+
+	<link rel="icon" type="image/png" href="lkpc.png"/>
+	
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+
+.w3-amber, .w3-hover-amber:hover {
+    color: #000!important;
+    background-color: #f55f61!important;
+}
+</style>
+<script>
+function loadFrame(url) {
+    w3_close();
+  document.getElementById("main-content").src = url;
+}
+</script>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-amber w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-48"><img src="lkpcnob.png" height="50px"><b>LK Computer<br></b><p style="font-size:16px;">利記電腦 - 香港人嘅砌機網<br>Online Hardware Service</p>
+    <form action="/search_page.php">
+<input style="padding-left: 5px;padding-right: 5px;width: 240px;margin-right: 10px;height: 30px; border-radius: 5px; border: none; background-color: #fb9a93; font-size: 16px;" type="text" name="search" value="Search"><br>
+</form>
+    </h3>
+  </div>
+  <div class="w3-bar-block">
+    <a onclick="loadFrame('homepage.html?v=485')" class="w3-bar-item w3-button w3-hover-white">Home 主頁</a> 
+    <a onclick="loadFrame('diy.html?v=485')" class="w3-bar-item w3-button w3-hover-white">Build Your Own PC 砌機</a> 
+    <!-- <a onclick="loadFrame('store.html?v=485')" class="w3-bar-item w3-button w3-hover-white">Products 產品</a> 
+    <a onclick="loadFrame('account.html?v=485')" class="w3-bar-item w3-button w3-hover-white">My Account 我的帳戶</a> -->
+   <!-- <a onclick="loadFrame('about.html?v=485')" class="w3-bar-item w3-button w3-hover-white">About 關於</a> -->
+  </div>
+  <!-- <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Language</a> -->
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-amber w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-amber w3-margin-right" onclick="w3_open()">☰</a>
+  <span><img src="lifecat_computer.png" height="50px"> LK Computer</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Content -->
+<iframe id="main-content" src="homepage.html?v=485" style="width:100%; height:100vh;"></iframe>
+
+
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="padding-right:58px"><p class="w3-right">Copyright © 2020 Lee Kee Computer Team. | DMCA Protected </p></div>
+
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
